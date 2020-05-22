@@ -1,2 +1,2 @@
 # snippets
-Simple pieces of code in different languages
+Simple pieces of code of commands
