@@ -23,14 +23,14 @@ echo -n | openssl s_client -connect strona.pl:443 | sed -ne '/-BEGIN CERTIFICATE
 
 ## MAIL
 
-IMAP via SSL uses port 993
-POP3 via SSL uses port 995
-SMTP via SSL uses port 465
+- IMAP via SSL uses port 993
+- POP3 via SSL uses port 995
+- SMTP via SSL uses port 465
 ```
 openssl s_client -showcerts -connect mail.example.com:993 -servername mail.example.com
 ```
 
-SMTP via TLS/StartTLS uses port 25 or 587
+- SMTP via TLS/StartTLS uses port 25 or 587
 ```
 openssl s_client -starttls smtp -showcerts -connect mail.example.com:25  -servername mail.example.com
 ```
