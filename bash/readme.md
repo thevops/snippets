@@ -8,3 +8,9 @@ echo "do something"
 ```bash
 while :; do [[ "$(ps axuf|grep [v]im | wc -l)" != "0" ]] && date && sleep 1 || break; done; echo "send notify"
 ```
+
+
+**Match only profiles names in ~/.aws/config**
+```
+grep -oP '(?<=\[profile ).*(?=\])' ~/.aws/config
+```
